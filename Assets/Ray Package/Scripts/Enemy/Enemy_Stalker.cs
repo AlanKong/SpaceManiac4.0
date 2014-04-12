@@ -45,6 +45,10 @@ public class Enemy_Stalker : MonoBehaviour {
 			Instantiate(shot, transform.position, transform.rotation);
 			last_shot = Time.time;
 		}
+
+		if (BattleScript.battleBegin == false) {
+			Destroy (gameObject);
+		}
 		
 	}
 	

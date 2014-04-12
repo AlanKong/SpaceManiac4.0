@@ -29,7 +29,7 @@ public class BattleScript : MonoBehaviour
 
 
 
-						if (Input.GetKey (KeyCode.T)) {
+						if (/*Input.GetKey (KeyCode.T)*/LevelController.levelTimerStat <= 0f) {
 								winner = attacker;
 								loser = defender;
 								
@@ -107,7 +107,7 @@ public class BattleScript : MonoBehaviour
 						
 
 
-						if (Input.GetKey (KeyCode.F)) {
+						if (ShipSpeedFixScript.shipBattleCoreCount == 0/*Input.GetKey (KeyCode.F)*/) {
 								winner = defender;
 								loser = attacker;
 								

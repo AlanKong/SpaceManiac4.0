@@ -66,6 +66,10 @@ public class Enemy_Walker : MonoBehaviour {
 				break;
 			}
 		}
+
+		if (BattleScript.battleBegin == false) {
+			Destroy (gameObject);
+		}
 	
 	}
 

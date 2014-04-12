@@ -39,7 +39,7 @@ public class GameControlScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (currentPlayer);
+
 		/*if (Input.GetKeyDown (KeyCode.Space)) {
 			Vector3 battleLoc;
 			battleLoc.x = -21f;

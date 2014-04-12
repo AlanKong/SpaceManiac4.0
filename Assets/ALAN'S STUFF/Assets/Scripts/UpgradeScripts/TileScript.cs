@@ -23,6 +23,14 @@ public class TileScript : MonoBehaviour
 						GetComponent<SpriteRenderer> ().sprite = nonHighlight;
 						selected = false;
 				} 
+
+		if (GridSetupScript.deletePressed == true || GridSetupScript.deletePressedP2 == true) {
+			GetComponent<SpriteRenderer> ().sprite = nonHighlight;
+			selected = false;
+			GridSetupScript.somethingSelected = false;
+			GridSetupScript.selectedTile = null;
+
+				}
 		}
 
 		void OnMouseDown ()

@@ -27,5 +27,10 @@ public class BattleFieldScript : MonoBehaviour {
 			Destroy(missile.gameObject);
 
 				}
+
+		if (missile.tag == "bullets") {
+			Destroy(missile.gameObject);
+			
+		}
 		}
 }

@@ -12,6 +12,10 @@ public class Enemy_MoveDown : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (BattleScript.battleBegin == false) {
+			Destroy (gameObject);
+		}
+
 	}
 
 	void OnTriggerEnter2D(Collider2D missile){

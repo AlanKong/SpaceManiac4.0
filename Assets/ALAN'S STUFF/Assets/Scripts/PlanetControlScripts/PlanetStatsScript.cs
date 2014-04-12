@@ -90,6 +90,7 @@ public class PlanetStatsScript : MonoBehaviour
 										BattleScript.attackerShip = ShipAttackP1;
 										ShipAttackP1.GetComponent<ShipPlayerOneController> ().attacking = true;
 										ShipSpeedFixScript.shipOneBattleSpeed = ShipSpeedFixScript.shipOneFixedSpeed;
+					ShipSpeedFixScript.shipBattleCoreCount = ShipSpeedFixScript.shipFixedCoreCount;
 
 
 										/*GameControlScript.playerMPAdd += MP;
@@ -115,6 +116,8 @@ public class PlanetStatsScript : MonoBehaviour
 										BattleScript.attackerShip = ShipAttackP2;
 										ShipAttackP2.GetComponent<ShipPlayerTwoController> ().attacking = true;
 										ShipSpeedFixScript.shipTwoBattleSpeed = ShipSpeedFixScript.shipTwoFixedSpeed;
+					ShipSpeedFixScript.shipBattleCoreCount = ShipSpeedFixScript.shipFixedCoreCount;
+
 										/*GameControlScript.enemyMPAdd += MP;
 					GameControlScript.enemyMoneyAdd += Money;
 					GameControlScript.enemyMineralAdd += Mineral;

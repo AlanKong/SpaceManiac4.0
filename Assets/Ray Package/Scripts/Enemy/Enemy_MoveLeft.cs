@@ -32,6 +32,10 @@ public class Enemy_MoveLeft : MonoBehaviour {
 			Instantiate(bullet, transform.position, transform.rotation);
 			last_shot = Time.time;
 		}
+
+		if (BattleScript.battleBegin == false) {
+			Destroy (gameObject);
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D missile){

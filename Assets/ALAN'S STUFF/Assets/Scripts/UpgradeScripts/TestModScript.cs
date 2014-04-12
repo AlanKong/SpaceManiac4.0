@@ -103,7 +103,10 @@ public class TestModScript : MonoBehaviour
 								GridSetupScript.somethingSelected = false;
 								GridSetupScript.deletePressed = false;
 
-						} else if (core == false && GridSetupScript.deletePressed == false && onGrid == false) {
+						} else if (core == false && GridSetupScript.deletePressed == false && onGrid == false &&
+			           GameControlScript.playerMP >= priceMP &&
+			           GameControlScript.playerMineral >= priceMineral &&
+			           GameControlScript.playerMoney >= priceMoney) {
 								replaceX = GridSetupScript.selectedTile.GetComponent<TileScript> ().xCoord;
 								replaceY = GridSetupScript.selectedTile.GetComponent<TileScript> ().yCoord;
 								GridSetupScript.selectedTile.GetComponent<TileScript> ().occupied = true;
@@ -132,7 +135,10 @@ public class TestModScript : MonoBehaviour
 								GridSetupScript.somethingSelectedP2 = false;
 								GridSetupScript.deletePressedP2 = false;
 				
-						} else if (core == false && GridSetupScript.deletePressedP2 == false && onGrid == false) {
+			} else if (core == false && GridSetupScript.deletePressedP2 == false && onGrid == false &&
+			           GameControlScript.enemyMP >= priceMP &&
+			           GameControlScript.enemyMineral >= priceMineral &&
+			           GameControlScript.enemyMoney >= priceMoney) {
 								replaceX = GridSetupScript.selectedTileP2.GetComponent<TileScript> ().xCoord;
 								replaceY = GridSetupScript.selectedTileP2.GetComponent<TileScript> ().yCoord;
 								GridSetupScript.selectedTileP2.GetComponent<TileScript> ().occupied = true;
@@ -155,7 +161,13 @@ public class TestModScript : MonoBehaviour
 						HP -= enemyBullet.GetComponent<EnemyShotDamage> ().enemyShotDamage;
 						Destroy (enemyBullet.gameObject);
 				}
+
+		if (enemyBullet.tag == "minion") {
+			HP -= 1;
+		}
+
 				if (HP == 0) { 
+
 
 						StartCoroutine (deleteMod (gameObject));
 
@@ -177,7 +189,7 @@ public class TestModScript : MonoBehaviour
 		
 		if (GameControlScript.currentPlayer == 1 && BattleScript.battleBegin == true) {
 			ShipSpeedFixScript.shipOneBattleSpeed -= boost;
-			//Debug.Log (boost + " " + ShipSpeedFixScript.shipOneBattleSpeed);
+
 		}
 		
 		if (GameControlScript.currentPlayer == 2 && BattleScript.battleBegin == false) {
@@ -186,8 +198,12 @@ public class TestModScript : MonoBehaviour
 		}
 		if (GameControlScript.currentPlayer == 2 && BattleScript.battleBegin == true) {
 			ShipSpeedFixScript.shipTwoBattleSpeed -= boost;
-			//Debug.Log (boost + " " + ShipSpeedFixScript.shipOneBattleSpeed);
+
 			
+		}
+		if(core == true)
+		{
+			ShipSpeedFixScript.shipBattleCoreCount--;
 		}
 
 				Destroy (gameObject);

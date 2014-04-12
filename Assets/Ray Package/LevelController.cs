@@ -6,6 +6,7 @@ public class LevelController : MonoBehaviour
 		public bool trigger; //end game trigger
 		float wait_timer;
 		public float level_timer;
+	static public float levelTimerStat;
 		/*
 	 * Defender power:
 	 * 1. Frenzy: Boost defense fire rate. CD: 6s. Duration: 2s.
@@ -86,7 +87,7 @@ public class LevelController : MonoBehaviour
 		else {
 			level_timer = 90f;
 		}
-				
+		levelTimerStat = level_timer;
 		}
 
 		void OnGUI ()

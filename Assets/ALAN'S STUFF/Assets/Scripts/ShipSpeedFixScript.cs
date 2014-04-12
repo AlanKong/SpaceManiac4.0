@@ -9,6 +9,8 @@ public class ShipSpeedFixScript : MonoBehaviour {
 	static public float shipOneBattleSpeed = 0.05f;
 	static public float shipTwoBattleSpeed  = 0.05f;
 
+	static public int shipFixedCoreCount = 2;
+	static public int shipBattleCoreCount = 2;
 
 
 	// Use this for initialization
