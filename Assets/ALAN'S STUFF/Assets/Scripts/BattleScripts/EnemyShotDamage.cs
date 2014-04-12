@@ -15,6 +15,9 @@ public class EnemyShotDamage : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (BattleScript.battleBegin == false) {
+			Destroy (gameObject);
+		}
 	
 	}
 }

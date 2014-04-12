@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\TestModScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\DeletePressedScript.cs">
     <Files>
-      <File FileName="Assets\ALAN'S STUFF\Assets\Scripts\BattleScripts\BattleFieldScript.cs" Line="31" Column="30" />
-      <File FileName="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\TestModScript.cs" Line="141" Column="38" />
-      <File FileName="Assets\ALAN'S STUFF\Assets\Scripts\PlanetControlScripts\PlanetStatsScript.cs" Line="120" Column="1" />
+      <File FileName="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\FinishBuildButton.cs" Line="37" Column="3" />
+      <File FileName="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\DeletePressedScript.cs" Line="22" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
