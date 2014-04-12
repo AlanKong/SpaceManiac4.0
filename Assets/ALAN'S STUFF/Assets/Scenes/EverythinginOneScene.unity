@@ -3337,8 +3337,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 24
-    height: 130
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -3350,8 +3350,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 334568514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0300000012, y: .148000002, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: .0500000007, y: .230000004, z: 0}
+  m_LocalScale: {x: .0599999987, y: .180000007, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &336729185
@@ -8454,7 +8454,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 754448996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -.0799999982, y: .140000001, z: 1}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 2016530369}
@@ -8480,7 +8480,7 @@ GUIText:
   m_Text: Gui Text
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: -21.2800007, y: 327.23999}
+  m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 91afb76e2aa82db41aa25468c33e2590, type: 3}
@@ -8654,8 +8654,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 25.5400009
-    height: 230.800003
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -8667,8 +8667,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 767408154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0300000012, y: .340000033, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: .0500000007, y: .5, z: 0}
+  m_LocalScale: {x: .0599999987, y: .340000004, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &769786508
@@ -11375,8 +11375,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 33
-    height: 654
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -11388,8 +11388,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 997208359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .899999976, y: .0499999523, z: -.100000001}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: .93900001, y: .526000023, z: -.100000001}
+  m_LocalScale: {x: .0799999982, y: .860000014, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &997208362
@@ -11709,7 +11709,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1018066164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -.360000014, y: .129999995, z: 1}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1539123084}
@@ -11735,7 +11735,7 @@ GUIText:
   m_Text: Gui Text
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: -142.820007, y: 327.23999}
+  m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 91afb76e2aa82db41aa25468c33e2590, type: 3}
@@ -12768,7 +12768,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1104880443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: .239999995, y: .140000001, z: 1}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 2016530369}
@@ -12794,7 +12794,7 @@ GUIText:
   m_Text: Gui Text
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: 106.650002, y: 327.23999}
+  m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 91afb76e2aa82db41aa25468c33e2590, type: 3}
@@ -14965,7 +14965,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1364068074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -.360000014, y: .140000001, z: 1}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 2016530369}
@@ -14991,7 +14991,7 @@ GUIText:
   m_Text: Gui Text
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: -142.820007, y: 327.23999}
+  m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 91afb76e2aa82db41aa25468c33e2590, type: 3}
@@ -16951,10 +16951,10 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: -207.720001
-    y: 276.140015
-    width: 414.559998
-    height: 80.3199997
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -16966,8 +16966,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539123082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: -.382037163, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: .5, y: .0599999987, z: 0}
+  m_LocalScale: {x: .959999979, y: .109999999, z: 1}
   m_Children:
   - {fileID: 1018066165}
   - {fileID: 1868275065}
@@ -17430,8 +17430,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 24
-    height: 130
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -17443,8 +17443,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1564424315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0300000012, y: .670000076, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: .0500000007, y: .769999981, z: 0}
+  m_LocalScale: {x: .0599999987, y: .180000007, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1568422141
@@ -20569,7 +20569,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1868275064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -.0799999982, y: .129999995, z: 1}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1539123084}
@@ -20595,7 +20595,7 @@ GUIText:
   m_Text: Gui Text
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: -21.2800007, y: 327.23999}
+  m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 91afb76e2aa82db41aa25468c33e2590, type: 3}
@@ -21503,7 +21503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1954201546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: .239999995, y: .129999995, z: 1}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1539123084}
@@ -21529,7 +21529,7 @@ GUIText:
   m_Text: Gui Text
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: 106.650002, y: 327.23999}
+  m_PixelOffset: {x: 0, y: 0}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 91afb76e2aa82db41aa25468c33e2590, type: 3}
@@ -21822,8 +21822,8 @@ GUITexture:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 36
-    height: 234
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -21835,8 +21835,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1961342459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .910000026, y: .508000016, z: -.199999809}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: .949999988, y: .680000007, z: -.199999809}
+  m_LocalScale: {x: .0799999982, y: .300000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1971519035
@@ -22533,10 +22533,10 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: -207.720001
-    y: 276.140015
-    width: 414.559998
-    height: 80.3199997
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -22548,8 +22548,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2016530367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: .5, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: .5, y: .939999998, z: 0}
+  m_LocalScale: {x: .959999979, y: .109999999, z: 1}
   m_Children:
   - {fileID: 1364068075}
   - {fileID: 754448997}

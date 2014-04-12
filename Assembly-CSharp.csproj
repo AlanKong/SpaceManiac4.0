@@ -105,7 +105,6 @@
      <Compile Include="Assets\Ray Package\Scripts\Enemy\mama_move.cs" />
      <Compile Include="Assets\Ray Package\Shot_Follow.cs" />
      <Compile Include="Assets\Ray Package\Techtree.cs" />
-     <Compile Include="Assets\Ray Package\pleasedelete.cs" />
      <Compile Include="Assets\Ray&apos;s Expansion\Scripts\SpawnPoint.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

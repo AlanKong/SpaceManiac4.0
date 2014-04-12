@@ -21,7 +21,7 @@ public class ShipPlayerTwoController : MonoBehaviour {
 		}
 	}*/
 	
-	void Update ()
+	void FixedUpdate ()
 	{
 		
 		if (attacking == true) {
