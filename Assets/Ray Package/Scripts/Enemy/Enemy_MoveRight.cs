@@ -12,6 +12,9 @@ public class Enemy_MoveRight : MonoBehaviour {
 	public GameObject lvlCtrl;
 	public LevelController controlScript;
 
+	public Sprite P1Green;
+	public Sprite P2Red;
+
 	void Start() {
 		lvlCtrl = GameObject.Find ("LevelController");
 		controlScript = lvlCtrl.GetComponent<LevelController> ();
@@ -22,6 +25,13 @@ public class Enemy_MoveRight : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if (GameControlScript.currentPlayer == 1) {
+			GetComponent<SpriteRenderer> ().sprite = P2Red;
+		}
+		if (GameControlScript.currentPlayer == 2) {
+			GetComponent<SpriteRenderer> ().sprite = P1Green;
+		}
 		frenzy = controlScript.frenzy_trigger;
 		if(frenzy) {
 			fire_interval = 0.25f;

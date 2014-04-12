@@ -12,7 +12,9 @@ public class Enemy_Ring : MonoBehaviour
 		public GameObject lvlCtrl;
 		public LevelController controlScript;
 		bool left;
-	
+
+	public Sprite P1Green;
+	public Sprite P2Red;
 		void Start ()
 		{
 				left = false;
@@ -25,6 +27,13 @@ public class Enemy_Ring : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
+
+		if (GameControlScript.currentPlayer == 1) {
+			GetComponent<SpriteRenderer> ().sprite = P2Red;
+		}
+		if (GameControlScript.currentPlayer == 2) {
+			GetComponent<SpriteRenderer> ().sprite = P1Green;
+		}
 				if (left) {
 						Vector3 temp = transform.position;
 						temp.x += 0.03f;
