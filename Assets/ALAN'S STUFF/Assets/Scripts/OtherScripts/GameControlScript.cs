@@ -10,18 +10,18 @@ public class GameControlScript : MonoBehaviour {
 	static public int playerMoney = 0;
 	static public int playerMineral = 0;
 
-	static public int playerMPAdd = 10;
-	static public int playerMoneyAdd = 10;
-	static public int playerMineralAdd = 10;
+	static public int playerMPAdd = 1;
+	static public int playerMoneyAdd = 1;
+	static public int playerMineralAdd = 1;
 
 
 	static public int enemyMP = 0;
 	static public int enemyMoney = 0;
 	static public int enemyMineral = 0;
 	
-	static public int enemyMPAdd = 10;
-	static public int enemyMoneyAdd = 10;
-	static public int enemyMineralAdd = 10;
+	static public int enemyMPAdd = 1;
+	static public int enemyMoneyAdd = 1;
+	static public int enemyMineralAdd = 1;
 
 	static public int currentPlayer = 1;
 

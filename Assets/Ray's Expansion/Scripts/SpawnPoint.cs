@@ -11,6 +11,7 @@ public class SpawnPoint : MonoBehaviour
 		public List<Vector2> location;
 		public int key;
 		public float cooldown;
+		static public int buttonClick = 0;
 		float startup_time;
 		int i;
 		bool spawning;
@@ -29,48 +30,59 @@ public class SpawnPoint : MonoBehaviour
 		void Update ()
 		{
 				if (BattleScript.battleBegin == true) {
+
+
 						if (!spawning) {
 								switch (key) {
 								case 1:
-										if (Input.GetKeyDown ("1")) {
+					if (Input.GetKeyDown ("1") || buttonClick == 1 || Input.GetKeyDown ("7")) {
 												SetStart ();
+												buttonClick = 0;
 										}
 										break;
 								case 2:
-										if (Input.GetKeyDown ("2")) {
+					if (Input.GetKeyDown ("2") || buttonClick == 2 || Input.GetKeyDown ("8")) {
 												SetStart ();
+												buttonClick = 0;
 										}
 										break;
 								case 3:
-										if (Input.GetKeyDown ("3")) {
+					if (Input.GetKeyDown ("3") || buttonClick == 3 || Input.GetKeyDown ("9")) {
 												SetStart ();
+												buttonClick = 0;
 										}
 										break;
 								case 4:
-										if (Input.GetKeyDown ("4")) {
+					if (Input.GetKeyDown ("4") || buttonClick == 4 ||  Input.GetKeyDown ("0")) {
 												SetStart ();
+												buttonClick = 0;
 										}
 										break;
 								case 5:
-										if (Input.GetKeyDown ("5")) {
+					if (Input.GetKeyDown ("5") || buttonClick == 5 || Input.GetKeyDown (KeyCode.Minus)) {
 												SetStart ();
+												buttonClick = 0;
 										}
 										break;
 								case 6:
-										if (Input.GetKeyDown ("6")) {
+					if (Input.GetKeyDown ("6") || buttonClick == 6  || Input.GetKeyDown (KeyCode.Equals)) {
+
 												SetStart ();
+												buttonClick = 0;
 										}
 										break;
-								case 7:
-										if (Input.GetKeyDown ("7")) {
+								/*case 7:
+					/if (Input.GetKeyDown ("7") || buttonClick == 7 ) {
 												SetStart ();
+												buttonClick = 0;
 										}
 										break;
 								case 8:
-										if (Input.GetKeyDown ("8")) {
+					if (Input.GetKeyDown ("8") || buttonClick == 8 ) {
 												SetStart ();
+												buttonClick = 0;
 										}
-										break;
+										break;*/
 								default:
 										break;
 								}

@@ -72,7 +72,7 @@ public class TestModScript : MonoBehaviour
 				}
 
 				if (isTurret == true && inBattle == true) {
-						if (Input.GetKey (KeyCode.LeftShift)) {
+			if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift)) {
 								if (Time.time - lastShot > fireInterval) {
 										Vector3 turretLoc = transform.position;
 										Vector2 speed = new Vector2 (10, 10);

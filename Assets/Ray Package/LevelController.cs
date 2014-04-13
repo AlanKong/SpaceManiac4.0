@@ -21,6 +21,7 @@ public class LevelController : MonoBehaviour
 		public bool forcefield_trigger;
 		public float forcefield_cd;
 		public GameObject ffield;
+	static public int getFrenzyTrig = 0;
 
 		void Start ()
 		{
@@ -37,19 +38,21 @@ public class LevelController : MonoBehaviour
 						if (level_timer <= 0)
 								trigger = true;
 						//use frenzy
-						if (Input.GetKeyDown ("o")) {
+			if (Input.GetKeyDown ("5") || getFrenzyTrig == 5  || Input.GetKeyDown (KeyCode.Minus)) {
 								if (!frenzy_trigger && frenzy_cd <= 0) {
 										frenzy_trigger = true;
 										frenzy_cd = 6f; //frenzy cooldown timer
+					getFrenzyTrig = 0;
 								}
 						}
+
 						if (frenzy_cd >= 0) { //frenzy cd timer running
 								frenzy_cd -= Time.deltaTime;
 								if (frenzy_cd <= 4f && frenzy_trigger) //frenzy duration end
 										frenzy_trigger = false;
 						}
 						//use emp
-						if (Input.GetKeyDown ("p")) {
+						/*if (Input.GetKeyDown ("p")) {
 								if (!emp_trigger && emp_cd <= 0) {
 										emp_trigger = true;
 										emp_cd = 30f; //emp cooldown timer
@@ -72,7 +75,7 @@ public class LevelController : MonoBehaviour
 								forcefield_cd -= Time.deltaTime;
 								if (forcefield_cd <= 4f && forcefield_trigger) //forcefield duration end
 										forcefield_trigger = false;
-						}
+						}*/
 						//End level trigger
 						if (trigger) {
 								if (wait_timer < 3f)
@@ -80,6 +83,8 @@ public class LevelController : MonoBehaviour
 								//else
 								//		Application.LoadLevel ("GameScene");
 						}
+
+
 
 						
 			      
@@ -90,7 +95,7 @@ public class LevelController : MonoBehaviour
 		levelTimerStat = level_timer;
 		}
 
-		void OnGUI ()
+		/*void OnGUI ()
 		{
 				if (BattleScript.battleBegin == true) {	
 						GUI.Label (new Rect (30, 50, 80, 20), ((int)level_timer).ToString ());
@@ -110,6 +115,6 @@ public class LevelController : MonoBehaviour
 								GUI.Label (new Rect (30, 170, 160, 20), "F-field ready");
 						}
 				}
-		}
+		}*/
 }
 
