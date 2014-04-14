@@ -15,13 +15,13 @@ public class BattleGUIScript : MonoBehaviour {
 
 			guiTexture.enabled = false;
 				}
-		if (BattleScript.battleBegin == true) {
+		//if (BattleScript.battleBegin == true) {
 
 
 
 			
-			guiTexture.enabled = true;
-		}
+			//guiTexture.enabled = true;
+		//}
 	
 	}
 

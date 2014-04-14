@@ -242,7 +242,7 @@ MonoBehaviour:
   priceMoney: 2
   priceMineral: 0
   boost: 0
-  HP: 2
+  HP: 4
   damage: 1
   isTurret: 1
   shot: {fileID: 100000, guid: 06a8bb22e852b9b48a8def00e01aac9f, type: 2}

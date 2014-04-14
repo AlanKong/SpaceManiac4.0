@@ -70,7 +70,7 @@ MonoBehaviour:
   bullet: {fileID: 100000, guid: 5465e3dd35413a446abe9ef3b353ca5b, type: 2}
   fire_interval: 1
   speed: 2.5
-  hp: 2
+  hp: 4
   lvlCtrl: {fileID: 0}
   controlScript: {fileID: 0}
   P1Green: {fileID: 21300000, guid: 0f1fc1cbfeb6c9a429231c8b4f009ffd, type: 3}

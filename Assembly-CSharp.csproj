@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{17E9491D-0D3C-E36A-1674-DA372FAA6A1B}</ProjectGuid>
+	<ProjectGuid>{D09AB286-7A43-78D5-B578-16655C643D4D}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -93,6 +93,8 @@
      <Compile Include="Assets\ALAN&apos;S STUFF\Assets\Scripts\UpgradeScripts\TestModScript.cs" />
      <Compile Include="Assets\ALAN&apos;S STUFF\Assets\Scripts\UpgradeScripts\TileDetectScript.cs" />
      <Compile Include="Assets\ALAN&apos;S STUFF\Assets\Scripts\UpgradeScripts\TileScript.cs" />
+     <Compile Include="Assets\DefTechButtonScript.cs" />
+     <Compile Include="Assets\OffButtonScript.cs" />
      <Compile Include="Assets\Ray Package\Boss\Boss1.cs" />
      <Compile Include="Assets\Ray Package\Boss\Boss2.cs" />
      <Compile Include="Assets\Ray Package\Boss\Boss3.cs" />
@@ -114,6 +116,10 @@
      <Compile Include="Assets\Ray Package\Shot_Follow.cs" />
      <Compile Include="Assets\Ray Package\Techtree.cs" />
      <Compile Include="Assets\Ray&apos;s Expansion\Scripts\SpawnPoint.cs" />
+     <Compile Include="Assets\TechButtonScript.cs" />
+     <Compile Include="Assets\TechtreeController1.cs" />
+     <Compile Include="Assets\TechtreeController2.cs" />
+     <Compile Include="Assets\UpgCtrl.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

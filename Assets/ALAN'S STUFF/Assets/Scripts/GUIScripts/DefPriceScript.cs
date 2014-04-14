@@ -19,7 +19,7 @@ public class DefPriceScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(BattleScript.battleBegin == true)
+		/*if(BattleScript.battleBegin == true)
 		   {
 
 			if(signalGet == 0)
@@ -46,13 +46,13 @@ public class DefPriceScript : MonoBehaviour {
 			{
 				guiTexture.texture = buttonOprice;
 			}
-			/*if(signalGet == 6)
+			if(signalGet == 6)
 			{
 				LevelController.levelTimerStat = 0f;
-			}*/
+			}
 
 			guiTexture.enabled = true;
-		}
+		}*/
 
 		if (BattleScript.battleBegin == false) {
 			

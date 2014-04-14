@@ -102,7 +102,8 @@ MonoBehaviour:
   location:
   - {x: -3, y: 2}
   key: 3
-  cooldown: 3
+  cooldown: 10
+  cd_timer: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

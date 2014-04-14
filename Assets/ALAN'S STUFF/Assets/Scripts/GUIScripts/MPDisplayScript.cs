@@ -32,6 +32,18 @@ public class MPDisplayScript : MonoBehaviour {
 		if(GameControlScript.currentScene == 3) {
 			guiText.enabled = false;
 		}
+
+		if(GameControlScript.currentScene == 6 && GameControlScript.currentPlayer == 2) {
+			guiText.text = (GameControlScript.enemyMineral.ToString ()) + "(+" + (GameControlScript.enemyMineralAdd.ToString ()) + ")";
+			guiText.color = Color.red;
+			guiText.enabled = true;
+		}
+		
+		if(GameControlScript.currentScene == 7 && GameControlScript.currentPlayer == 2) {
+			guiText.text = (GameControlScript.enemyMineral.ToString ()) + "(+" + (GameControlScript.enemyMineralAdd.ToString ()) + ")";
+			guiText.color = Color.red;
+			guiText.enabled = true;
+		}
 		
 	}
 }

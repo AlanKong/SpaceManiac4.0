@@ -15,9 +15,9 @@ public class GameControlScript : MonoBehaviour {
 	static public int playerMineralAdd = 1;
 
 
-	static public int enemyMP = 0;
-	static public int enemyMoney = 0;
-	static public int enemyMineral = 0;
+	static public int enemyMP = 5;
+	static public int enemyMoney = 5;
+	static public int enemyMineral = 5;
 	
 	static public int enemyMPAdd = 1;
 	static public int enemyMoneyAdd = 1;

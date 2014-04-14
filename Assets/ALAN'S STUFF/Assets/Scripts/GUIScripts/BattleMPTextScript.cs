@@ -14,7 +14,7 @@ public class BattleMPTextScript : MonoBehaviour {
 			
 			guiText.enabled = false;
 		}
-		if (BattleScript.battleBegin == true) {
+		/*if (BattleScript.battleBegin == true) {
 
 			if(GameControlScript.currentPlayer == 1)
 			{
@@ -29,7 +29,7 @@ public class BattleMPTextScript : MonoBehaviour {
 
 
 			guiText.enabled = true;
-		}
+		}*/
 	
 	}
 }

@@ -26,6 +26,14 @@ public class enemyMoneyDisplayScript : MonoBehaviour {
 		if(GameControlScript.currentScene == 3) {
 			guiText.enabled = false;
 		}
+
+		if(GameControlScript.currentScene == 4 || GameControlScript.currentScene == 5) {
+			guiText.enabled = false;
+		}
+		
+		if(GameControlScript.currentScene == 6 || GameControlScript.currentScene == 7) {
+			guiText.enabled = false;
+		}
 	
 	}
 }
