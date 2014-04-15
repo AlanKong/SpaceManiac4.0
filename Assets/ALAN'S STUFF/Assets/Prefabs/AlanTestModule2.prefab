@@ -227,6 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0d1f7205628e542b81d33bef27a3aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxed: {fileID: 21300000, guid: b9ec89f701f581f43b47c2d02acf8ed6, type: 3}
+  regular: {fileID: 21300000, guid: 699483f9f7a27614d89316a602657e7c, type: 3}
   replaceX: 0
   replaceY: 0
   core: 0

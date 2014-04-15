@@ -3,12 +3,12 @@ using System.Collections;
 
 public class TileScript : MonoBehaviour
 {
-		public Sprite nonHighlight;
-		public Sprite select;
-		public bool selected = false;
-		public bool occupied = false;
 		public float xCoord;
-		public float yCoord;	
+		public float yCoord;
+		float cornerX = 10.6f;
+		float cornerY = -4f;
+		float cornerXP2 = 25.2f;
+		float cornerYP2 = -4f;
 
 		// Use this for initialization
 		void Start ()
@@ -19,49 +19,49 @@ public class TileScript : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-				if (occupied == true) {
-						GetComponent<SpriteRenderer> ().sprite = nonHighlight;
-						selected = false;
-				} 
-
-		if (GridSetupScript.deletePressed == true || GridSetupScript.deletePressedP2 == true) {
-			GetComponent<SpriteRenderer> ().sprite = nonHighlight;
-			selected = false;
-			GridSetupScript.somethingSelected = false;
-			GridSetupScript.selectedTile = null;
-
-				}
+					
 		}
 
 		void OnMouseDown ()
 		{
 				if (GameControlScript.currentPlayer == 1) {
-						if (selected == false && GridSetupScript.somethingSelected == false && occupied == false) {
-								GetComponent<SpriteRenderer> ().sprite = select;
-								selected = true;
-								GridSetupScript.somethingSelected = true;				
-								GridSetupScript.selectedTile = gameObject;
-						} else if (selected == true && GridSetupScript.somethingSelected == true) {
-								GetComponent<SpriteRenderer> ().sprite = nonHighlight;
-								selected = false;
-								GridSetupScript.somethingSelected = false;
-								GridSetupScript.selectedTile = null;
+	
+						if (GridSetupScript.somethingSelected == true && 
+								GameControlScript.playerMP >= GridSetupScript.selectedMod.GetComponent<TestModScript> ().priceMP &&
+								GameControlScript.playerMineral >= GridSetupScript.selectedMod.GetComponent<TestModScript> ().priceMineral &&
+								GameControlScript.playerMoney >= GridSetupScript.selectedMod.GetComponent<TestModScript> ().priceMoney) {
+								
+								GridSetupScript.shipArray [(int)xCoord, (int)yCoord] = Instantiate (GridSetupScript.selectedMod, new Vector3 (cornerX + xCoord / 1.85f, cornerY + yCoord / 1.85f, -1f), Quaternion.identity) as GameObject;
+								GridSetupScript.shipArray [(int)xCoord, (int)yCoord].GetComponent<SpriteRenderer> ().sprite = GridSetupScript.selectedMod.GetComponent<TestModScript> ().regular;
+								GridSetupScript.shipArray [(int)xCoord, (int)yCoord].transform.parent = GridSetupScript.controlCoreOneStat.transform;
+								GameControlScript.playerMP -= GridSetupScript.selectedMod.GetComponent<TestModScript> ().priceMP;
+								GameControlScript.playerMoney -= GridSetupScript.selectedMod.GetComponent<TestModScript> ().priceMoney;
+								GameControlScript.playerMineral -= GridSetupScript.selectedMod.GetComponent<TestModScript> ().priceMineral;
+								ShipSpeedFixScript.shipOneFixedSpeed += GridSetupScript.selectedMod.GetComponent<TestModScript> ().boost;
+
 						}
-						GridSetupScript.deletePressed = false;
+
 				}
 				if (GameControlScript.currentPlayer == 2) {
-						if (selected == false && GridSetupScript.somethingSelectedP2 == false && occupied == false) {
-								GetComponent<SpriteRenderer> ().sprite = select;
-								selected = true;
-								GridSetupScript.somethingSelectedP2 = true;				
-								GridSetupScript.selectedTileP2 = gameObject;
-						} else if (selected == true && GridSetupScript.somethingSelectedP2 == true) {
-								GetComponent<SpriteRenderer> ().sprite = nonHighlight;
-								selected = false;
-								GridSetupScript.somethingSelectedP2 = false;
-								GridSetupScript.selectedTileP2 = null;
+			
+						if (GridSetupScript.somethingSelectedP2 == true && 
+								GameControlScript.enemyMP >= GridSetupScript.selectedModP2.GetComponent<TestModScript> ().priceMP &&
+								GameControlScript.enemyMineral >= GridSetupScript.selectedModP2.GetComponent<TestModScript> ().priceMineral &&
+								GameControlScript.enemyMoney >= GridSetupScript.selectedModP2.GetComponent<TestModScript> ().priceMoney) {
+				
+								GridSetupScript.shipArrayP2 [(int)xCoord, (int)yCoord] = Instantiate (GridSetupScript.selectedModP2, new Vector3 (cornerXP2 + xCoord / 1.85f, cornerYP2 + yCoord / 1.85f, -1f), Quaternion.identity) as GameObject;
+								GridSetupScript.shipArrayP2 [(int)xCoord, (int)yCoord].GetComponent<SpriteRenderer> ().sprite = GridSetupScript.selectedModP2.GetComponent<TestModScript> ().regular;
+								GridSetupScript.shipArrayP2 [(int)xCoord, (int)yCoord].transform.parent = GridSetupScript.controlCoreTwoStat.transform;
+								GameControlScript.enemyMP -= GridSetupScript.selectedModP2.GetComponent<TestModScript> ().priceMP;
+								GameControlScript.enemyMoney -= GridSetupScript.selectedModP2.GetComponent<TestModScript> ().priceMoney;
+								GameControlScript.enemyMineral -= GridSetupScript.selectedModP2.GetComponent<TestModScript> ().priceMineral;
+								ShipSpeedFixScript.shipTwoFixedSpeed += GridSetupScript.selectedModP2.GetComponent<TestModScript> ().boost;
+				
+				
+				
+
 						}
-						GridSetupScript.deletePressedP2 = false;
+
 				}
 		}
 }

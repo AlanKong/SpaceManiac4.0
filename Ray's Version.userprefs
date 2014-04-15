@@ -1,9 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TechtreeController1.cs">
     <Files>
       <File FileName="Assets\Ray Package\LevelController.cs" Line="48" Column="125" />
       <File FileName="Assets\TechtreeController1.cs" Line="73" Column="20" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\TestModScript.cs">
+    <Files>
+      <File FileName="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\TestModScript.cs" Line="9" Column="25" />
+      <File FileName="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\TileScript.cs" Line="64" Column="1" />
+      <File FileName="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\GridSetupScript.cs" Line="114" Column="6" />
+      <File FileName="Assets\NoFundsScript.cs" Line="20" Column="61" />
+      <File FileName="Assets\ALAN'S STUFF\Assets\Scripts\UpgradeScripts\DeletePressedScript.cs" Line="49" Column="33" />
+>>>>>>> Update 4.0
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -11,6 +11,10 @@ public class Techtree : MonoBehaviour {
 	public bool select;
 	public Techtree conflict; //Choose one between two
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Update 4.0
 	// Use this for initialization
 	void Start () {
 		unlock = true;
@@ -34,6 +38,24 @@ public class Techtree : MonoBehaviour {
 				}
 			}
 			unlock = temp;
+<<<<<<< HEAD
+=======
+		}
+		if(select && !bought)
+			this.gameObject.renderer.material.color = Color.blue;
+		else
+			this.gameObject.renderer.material.color = Color.white;
+		if(bought)
+			this.gameObject.renderer.material.color = Color.green;
+	}
+
+	void OnGUI() {
+		if(select){
+			Vector3 temp = Input.mousePosition;
+			GUI.Box (new Rect(temp.x+5f, Screen.height-(temp.y+60f), 100f, 60f), describ);
+
+
+>>>>>>> Update 4.0
 		}
 		if(select && !bought)
 			this.gameObject.renderer.material.color = Color.blue;
@@ -56,6 +78,19 @@ public class Techtree : MonoBehaviour {
 
 	void OnMouseExit() {
 		select = false;
+	}
+
+	void OnMouseEnter(){
+		select = true;
+
+		____k.mouseOvered = true;
+	
+	}
+
+	void OnMouseExit() {
+		select = false;
+		____k.mouseOvered = false;
+
 	}
 
 	void OnMouseOver(){

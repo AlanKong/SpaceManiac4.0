@@ -4,8 +4,8 @@ using System.Collections;
 public class FinishBuildButton : MonoBehaviour
 {
 
-	public Sprite nonHighlight;
-	public Sprite highlight;
+		public Sprite nonHighlight;
+		public Sprite highlight;
 
 		// Use this for initialization
 		void Start ()
@@ -32,13 +32,13 @@ public class FinishBuildButton : MonoBehaviour
 				GameControlScript.currentScene = 0;
 		}
 
-	void OnMouseEnter ()
-	{
-		GetComponent<SpriteRenderer> ().sprite = highlight;
-	}
+		void OnMouseEnter ()
+		{
+				GetComponent<SpriteRenderer> ().sprite = highlight;
+		}
 	
-	void OnMouseExit ()
-	{
-		GetComponent<SpriteRenderer> ().sprite = nonHighlight;
-	}
+		void OnMouseExit ()
+		{
+				GetComponent<SpriteRenderer> ().sprite = nonHighlight;
+		}
 }

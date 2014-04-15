@@ -94,6 +94,7 @@
      <Compile Include="Assets\ALAN&apos;S STUFF\Assets\Scripts\UpgradeScripts\TileDetectScript.cs" />
      <Compile Include="Assets\ALAN&apos;S STUFF\Assets\Scripts\UpgradeScripts\TileScript.cs" />
      <Compile Include="Assets\DefTechButtonScript.cs" />
+     <Compile Include="Assets\NoFundsScript.cs" />
      <Compile Include="Assets\OffButtonScript.cs" />
      <Compile Include="Assets\Ray Package\Boss\Boss1.cs" />
      <Compile Include="Assets\Ray Package\Boss\Boss2.cs" />
@@ -120,6 +121,7 @@
      <Compile Include="Assets\TechtreeController1.cs" />
      <Compile Include="Assets\TechtreeController2.cs" />
      <Compile Include="Assets\UpgCtrl.cs" />
+     <Compile Include="Assets\____k.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
